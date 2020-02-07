@@ -1,7 +1,8 @@
 {
   "name": "Hanzi Learner",
   "short_name": "Hanzi Learner",
-  "start_url": "/hanzi-learner",
+  "scope": "/hanzi-learner/",
+  "start_url": "/hanzi-learner/index.html",
   "background_color": "#ffffff",
   "theme_color": "#14854F",
   "display": "minimal-ui",
