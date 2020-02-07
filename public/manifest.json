@@ -1,0 +1,15 @@
+{
+  "name": "Hanzi Learner",
+  "short_name": "Hanzi Learner",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#14854F",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
