@@ -4,6 +4,7 @@ import postcss from "rollup-plugin-postcss";
 import resolve from "@rollup/plugin-node-resolve";
 import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
+
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
@@ -49,7 +50,13 @@ export default {
 
     // If we're building for production (npm run build
     // instead of npm run dev), minify
-    production && terser()
+    production && terser(),
+
+    template({
+      from: "src/template.html",
+      base: production ? "/hanzi-learner" : "",
+      to: "public/index.html"
+    })
   ],
   watch: {
     clearScreen: false
@@ -71,4 +78,16 @@ function serve() {
       }
     }
   };
+}
+
+function template(option) {
+  let fs = require("fs");
+
+  let templatePath = option.from;
+  let publicPath = option.base;
+  let indexPath = option.to;
+
+  let T = fs.readFileSync(templatePath, "utf-8");
+  T = T.replace("%base%", `<base href="${publicPath}/">`);
+  fs.writeFileSync(indexPath, T);
 }
