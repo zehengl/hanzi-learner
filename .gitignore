@@ -1,3 +1,5 @@
 /node_modules/
 /public/build/
 /public/index.html
+/public/manifest.json
+.now

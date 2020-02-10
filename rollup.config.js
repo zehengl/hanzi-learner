@@ -6,6 +6,7 @@ import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
 
 const production = !process.env.ROLLUP_WATCH;
+const baseUrl = production ? require("./package.json").baseUrl : "";
 
 export default {
   input: "src/main.js",
@@ -40,6 +41,17 @@ export default {
     }),
     commonjs(),
 
+    template({
+      templatePath: "src/templates/index.html",
+      baseUrl: baseUrl,
+      outputPath: "public/index.html"
+    }),
+    template({
+      templatePath: "src/templates/manifest.json",
+      baseUrl: baseUrl,
+      outputPath: "public/manifest.json"
+    }),
+
     // In dev mode, call `npm run start` once
     // the bundle has been generated
     !production && serve(),
@@ -50,13 +62,7 @@ export default {
 
     // If we're building for production (npm run build
     // instead of npm run dev), minify
-    production && terser(),
-
-    template({
-      from: "src/template.html",
-      base: production ? "/hanzi-learner" : "",
-      to: "public/index.html"
-    })
+    production && terser()
   ],
   watch: {
     clearScreen: false
@@ -82,12 +88,11 @@ function serve() {
 
 function template(option) {
   let fs = require("fs");
-
-  let templatePath = option.from;
-  let publicPath = option.base;
-  let indexPath = option.to;
+  let templatePath = option.templatePath;
+  let baseUrl = option.baseUrl;
+  let outputPath = option.outputPath;
 
   let T = fs.readFileSync(templatePath, "utf-8");
-  T = T.replace("%base%", `<base href="${publicPath}/">`);
-  fs.writeFileSync(indexPath, T);
+  T = T.replace(/%base%/g, baseUrl ? `${baseUrl}/` : "");
+  fs.writeFileSync(outputPath, T);
 }
