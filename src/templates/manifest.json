@@ -4,7 +4,7 @@
   "scope": "/%base%",
   "start_url": "/%base%index.html",
   "background_color": "#ffffff",
-  "theme_color": "#14854F",
+  "theme_color": "#eed3b6",
   "display": "minimal-ui",
   "icons": [
     {
