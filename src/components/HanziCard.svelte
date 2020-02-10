@@ -10,8 +10,8 @@
 
   onMount(() => {
     writer = HanziWriter.create(`character-${index}-div`, character, {
-      width: 500,
-      height: 500,
+      width: 240,
+      height: 240,
       padding: 5,
       showOutline: true,
       showHintAfterMisses: 3,
@@ -31,6 +31,7 @@
 <style>
   .HanziCard {
     max-width: 100%;
+    padding: 1rem;
   }
 </style>
 
