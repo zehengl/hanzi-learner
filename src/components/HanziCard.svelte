@@ -7,6 +7,8 @@
   export let index;
 
   let writer;
+  let inQuiz = false;
+  let inAnimation = false;
 
   onMount(() => {
     writer = HanziWriter.create(`character-${index}-div`, character, {
@@ -19,12 +21,24 @@
     });
   });
 
-  function animateCharacter() {
-    writer.animateCharacter();
+  function startAnimation() {
+    inAnimation = true;
+    writer.animateCharacter({ onComplete: clearAnimationFlag });
   }
 
-  function quiz() {
-    writer.quiz();
+  function clearAnimationFlag() {
+    inAnimation = false;
+  }
+
+  function startQuiz() {
+    inQuiz = true;
+    writer.quiz({ onComplete: stopQuiz });
+  }
+
+  function stopQuiz() {
+    inQuiz = false;
+    writer.cancelQuiz();
+    writer.showCharacter();
   }
 </script>
 
@@ -39,9 +53,15 @@
   <Card>
     <h2 slot="header">{character}</h2>
     <div class="text-center" id="character-{index}-div" />
-    <div slot="footer" class="is-right">
-      <Button on:click={animateCharacter} secondary>Animate</Button>
-      <Button on:click={quiz} primary>Quiz</Button>
+    <div slot="footer" class="is-center">
+      {#if inQuiz}
+        <Button on:click={stopQuiz} secondary>Abort</Button>
+      {:else}
+        <Button on:click={startAnimation} secondary loading={inAnimation}>
+          Animate
+        </Button>
+      {/if}
+      <Button on:click={startQuiz} primary loading={inQuiz}>Quiz</Button>
     </div>
   </Card>
 </div>
