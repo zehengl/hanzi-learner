@@ -21,25 +21,25 @@
     });
   });
 
-  function startAnimation() {
+  const startAnimation = () => {
     inAnimation = true;
     writer.animateCharacter({ onComplete: clearAnimationFlag });
-  }
+  };
 
-  function clearAnimationFlag() {
+  const clearAnimationFlag = () => {
     inAnimation = false;
-  }
+  };
 
-  function startQuiz() {
+  const startQuiz = () => {
     inQuiz = true;
     writer.quiz({ onComplete: stopQuiz });
-  }
+  };
 
-  function stopQuiz() {
+  const stopQuiz = () => {
     inQuiz = false;
     writer.cancelQuiz();
     writer.showCharacter();
-  }
+  };
 </script>
 
 <style>

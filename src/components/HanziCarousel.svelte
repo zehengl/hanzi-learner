@@ -15,13 +15,8 @@
     });
   });
 
-  function left() {
-    controller.prev();
-  }
-
-  function right() {
-    controller.next();
-  }
+  const left = () => controller.prev();
+  const right = () => controller.next();
 </script>
 
 <div bind:this={siema}>
