@@ -4,6 +4,7 @@
 
   import HanziCard from "./components/HanziCard.svelte";
   import HanziCarousel from "./components/HanziCarousel.svelte";
+  import HanziSetting from "./components/HanziSetting.svelte";
 
   let characters = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
   let options = {
@@ -22,7 +23,10 @@
 
 <Container>
   <Nav>
-    <a slot="center" href="/" class="brand">Hanzi Learner</a>
+    <a slot="left" href="/" class="brand">Hanzi Learner</a>
+    <span class="is-vertical-align" slot="right">
+      <HanziSetting />
+    </span>
   </Nav>
   <HanziCarousel {options}>
     {#each characters as character, index}

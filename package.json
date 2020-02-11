@@ -20,7 +20,8 @@
     "rollup-plugin-postcss": "^2.0.6",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "svelte-feather-icons": "^3.2.2"
   },
   "dependencies": {
     "chota": "^0.7.1",
