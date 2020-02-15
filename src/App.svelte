@@ -6,7 +6,31 @@
   import HanziCarousel from "./components/HanziCarousel.svelte";
   import HanziSetting from "./components/HanziSetting.svelte";
 
-  let characters = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+  let characters = [
+    "一",
+    "二",
+    "三",
+    "人",
+    "个",
+    "大",
+    "山",
+    "上",
+    "下",
+    "小",
+    "雨",
+    "天",
+    "车",
+    "开",
+    "火",
+    "门",
+    "口",
+    "月",
+    "羊",
+    "只",
+    "有",
+    "牛",
+    "水"
+  ];
   let options = {
     perPage: 1,
     loop: true,
