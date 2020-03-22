@@ -51,4 +51,12 @@ let characters = [
   { zh: "云", en: "cloud" }
 ];
 
-export default characters;
+const getRandomCharacters = (n = 5) => {
+  return characters.sort(() => 0.5 - Math.random()).slice(0, n);
+};
+
+const getAllCharacters = () => {
+  return characters;
+};
+
+export { getRandomCharacters, getAllCharacters };

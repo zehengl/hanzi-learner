@@ -5,7 +5,7 @@
   import HanziCard from "./components/HanziCard.svelte";
   import HanziCarousel from "./components/HanziCarousel.svelte";
   import HanziSetting from "./components/HanziSetting.svelte";
-  import characters from "./hanzi";
+  import { getAllCharacters } from "./hanzi";
 
   let options = {
     perPage: 1,
@@ -29,7 +29,7 @@
     </span>
   </Nav>
   <HanziCarousel {options}>
-    {#each characters as character, index}
+    {#each getAllCharacters() as character, index}
       <HanziCard
         character_zh={character.zh}
         character_en={character.en}
