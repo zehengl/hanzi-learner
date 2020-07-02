@@ -62,7 +62,13 @@
           Animate
         </Button>
       {/if}
-      <Button on:click={startQuiz} primary loading={inQuiz}>Quiz</Button>
+      <Button
+        on:click={startQuiz}
+        primary
+        loading={inQuiz}
+        disabled={inAnimation}>
+        Quiz
+      </Button>
     </div>
   </Card>
 </div>
