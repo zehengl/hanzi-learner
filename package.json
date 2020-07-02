@@ -9,16 +9,16 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^13.0.0",
-    "@rollup/plugin-node-resolve": "^8.0.1",
-    "eslint": "^7.2.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "eslint": "^7.3.1",
     "eslint-plugin-svelte3": "^2.7.3",
-    "gh-pages": "^3.0.0",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.0.5",
     "prettier-plugin-svelte": "^1.1.0",
-    "rollup": "^2.16.1",
+    "rollup": "^2.18.2",
     "rollup-plugin-livereload": "^1.3.0",
     "rollup-plugin-postcss": "^3.1.2",
-    "rollup-plugin-svelte": "^5.2.2",
+    "rollup-plugin-svelte": "^5.2.3",
     "rollup-plugin-terser": "^6.1.0",
     "svelte": "^3.23.2",
     "svelte-feather-icons": "^3.2.2"
@@ -27,7 +27,7 @@
     "chota": "^0.8.0",
     "hanzi-writer": "^2.2.2",
     "siema": "^1.5.1",
-    "sirv-cli": "^1.0.0",
+    "sirv-cli": "^1.0.3",
     "svelte-chota": "^1.7.1"
   },
   "baseUrl": "hanzi-learner"
