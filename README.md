@@ -4,7 +4,7 @@
 
 # hanzi-learner
 
-[![Build Status](https://travis-ci.org/zehengl/hanzi-learner.svg?branch=master)](https://travis-ci.org/zehengl/hanzi-learner)
+![GitHub Pages Build and Deploy](https://github.com/zehengl/hanzi-learner/workflows/GitHub%20Pages%20Build%20and%20Deploy/badge.svg?branch=master)
 
 A Svelte app to learn Chinese characters
 
