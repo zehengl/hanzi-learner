@@ -18,7 +18,7 @@
       padding: 5,
       showOutline: true,
       showHintAfterMisses: 3,
-      highlightOnComplete: true
+      highlightOnComplete: true,
     });
   });
 
@@ -62,11 +62,7 @@
           Animate
         </Button>
       {/if}
-      <Button
-        on:click={startQuiz}
-        primary
-        loading={inQuiz}
-        disabled={inAnimation}>
+      <Button on:click={startQuiz} primary loading={inQuiz} disabled={inAnimation}>
         Quiz
       </Button>
     </div>

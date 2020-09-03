@@ -11,7 +11,7 @@
     perPage: 1,
     loop: true,
     draggable: false,
-    easing: "linear"
+    easing: "linear",
   };
 </script>
 
@@ -30,10 +30,7 @@
   </Nav>
   <HanziCarousel {options}>
     {#each getAllCharacters() as character, index}
-      <HanziCard
-        character_zh={character.zh}
-        character_en={character.en}
-        {index} />
+      <HanziCard character_zh={character.zh} character_en={character.en} {index} />
     {/each}
     <span slot="left-control">Prev</span>
     <span slot="right-control">Next</span>

@@ -11,7 +11,7 @@
   onMount(() => {
     controller = new Siema({
       selector: siema,
-      ...options
+      ...options,
     });
   });
 

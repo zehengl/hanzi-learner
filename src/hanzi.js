@@ -48,7 +48,7 @@ let characters = [
   { zh: "飞", en: "fly" },
   { zh: "虫", en: "bug" },
   { zh: "米", en: "rice" },
-  { zh: "云", en: "cloud" }
+  { zh: "云", en: "cloud" },
 ];
 
 const getRandomCharacters = (n = 5) => {
