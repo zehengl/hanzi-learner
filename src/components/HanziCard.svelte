@@ -56,7 +56,7 @@
     <div class="text-center" id="character-{index}-div" />
     <div slot="footer" class="is-center">
       {#if inQuiz}
-        <Button on:click={stopQuiz} secondary>Abort</Button>
+        <Button on:click={stopQuiz} error>Abort</Button>
       {:else}
         <Button on:click={startAnimation} secondary loading={inAnimation}>
           Animate
