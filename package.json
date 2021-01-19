@@ -16,7 +16,7 @@
     "postcss": "^8.2.4",
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^2.1.0",
-    "rollup": "^2.36.2",
+    "rollup": "^2.37.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-svelte": "^7.0.0",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "chota": "^0.8.0",
-    "hanzi-writer": "^2.3.0",
+    "hanzi-writer": "^3.0.1",
     "siema": "^1.5.1",
     "sirv-cli": "^1.0.10",
     "svelte-chota": "^1.8.0"
