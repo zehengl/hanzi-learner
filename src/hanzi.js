@@ -24,7 +24,6 @@ let characters = [
   { zh: "水", en: "water" },
   { zh: "中", en: "in" },
   { zh: "风", en: "wind" },
-  { zh: "天", en: "sky" },
   { zh: "头", en: "head" },
   { zh: "土", en: "soil" },
   { zh: "里", en: "in" },
