@@ -1,4 +1,5 @@
 import commonjs from "@rollup/plugin-commonjs";
+import json from '@rollup/plugin-json';
 import livereload from "rollup-plugin-livereload";
 import postcss from "rollup-plugin-postcss";
 import resolve from "@rollup/plugin-node-resolve";
@@ -40,6 +41,7 @@ export default {
       dedupe: ["svelte"]
     }),
     commonjs(),
+    json(),
 
     template({
       templatePath: "src/templates/index.html",
