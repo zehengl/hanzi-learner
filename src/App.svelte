@@ -16,24 +16,6 @@
   export let version;
 </script>
 
-<style>
-  :global(:root) {
-    --grid-maxWidth: 108rem;
-  }
-
-  footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
-  }
-
-  #app {
-    margin-top: 3rem;
-
-  }
-</style>
-
 <div id="app">
   <Container>
     <Nav>
@@ -44,7 +26,7 @@
     </Nav>
     <HanziCarousel {options}>
       {#each getAllCharacters() as character, index}
-        <HanziCard character_zh={character.zh} character_en={character.en} {index} />
+        <HanziCard {character} {index} />
       {/each}
       <span slot="left-control">Prev</span>
       <span slot="right-control">Next</span>
@@ -52,3 +34,20 @@
   </Container>
 </div>
 <footer class="text-center bg-light">Version: <strong>{version}</strong></footer>
+
+<style>
+  :global(:root) {
+    --grid-maxWidth: 108rem;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; /* Footer height */
+  }
+
+  #app {
+    margin-top: 3rem;
+  }
+</style>

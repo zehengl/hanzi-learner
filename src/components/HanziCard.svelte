@@ -3,8 +3,7 @@
   import { Button, Card } from "svelte-chota";
   import HanziWriter from "hanzi-writer";
 
-  export let character_zh;
-  export let character_en;
+  export let character;
   export let index;
 
   let writer;
@@ -12,7 +11,7 @@
   let inAnimation = false;
 
   onMount(() => {
-    writer = HanziWriter.create(`character-${index}-div`, character_zh, {
+    writer = HanziWriter.create(`character-${index}-div`, character, {
       width: 240,
       height: 240,
       padding: 5,
@@ -43,16 +42,8 @@
   };
 </script>
 
-<style>
-  .HanziCard {
-    max-width: 100%;
-    padding: 1rem;
-  }
-</style>
-
 <div class="HanziCard">
   <Card>
-    <h2 slot="header">{character_en}</h2>
     <div class="text-center" id="character-{index}-div" />
     <div slot="footer" class="is-center">
       {#if inQuiz}
@@ -68,3 +59,10 @@
     </div>
   </Card>
 </div>
+
+<style>
+  .HanziCard {
+    max-width: 100%;
+    padding: 1rem;
+  }
+</style>
