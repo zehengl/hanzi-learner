@@ -5,6 +5,7 @@
 # hanzi-learner
 
 ![GitHub Pages Build and Deploy](https://github.com/zehengl/hanzi-learner/workflows/GitHub%20Pages%20Build%20and%20Deploy/badge.svg?branch=master)
+[![Depfu](https://badges.depfu.com/badges/ff841f27978cf5e289f0e238b91ad847/count.svg)](https://depfu.com/github/zehengl/hanzi-learner?project_id=23910)
 
 A Svelte app to learn Chinese characters
 
