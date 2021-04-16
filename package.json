@@ -30,7 +30,7 @@
     "hanzi-writer": "^3.1.0",
     "siema": "^1.5.1",
     "sirv-cli": "^1.0.11",
-    "svelte-chota": "^1.8.3"
+    "svelte-chota": "^1.8.4"
   },
   "baseUrl": "hanzi-learner"
 }
