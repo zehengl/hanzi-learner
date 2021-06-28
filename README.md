@@ -23,15 +23,9 @@ A Svelte app to learn Chinese characters
     cd public
     now
 
-<hr>
-
-<sup>
-
 ## Credits
 
 - [Logo][1] by [inipagi][2]
-
-</sup>
 
 [1]: https://www.iconfinder.com/icons/2064478/brush_education_learn_student_study_icon
 [2]: https://www.iconfinder.com/inipagi
