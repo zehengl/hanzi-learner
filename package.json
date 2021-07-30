@@ -30,6 +30,6 @@
     "hanzi-writer": "^3.2.0",
     "siema": "^1.5.1",
     "sirv-cli": "^1.0.12",
-    "svelte-chota": "^1.8.4"
+    "svelte-chota": "^1.8.6"
   }
 }
