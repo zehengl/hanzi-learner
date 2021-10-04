@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "chota": "^0.8.0",
-    "hanzi-writer": "^3.2.0",
+    "hanzi-writer": "^3.3.0",
     "siema": "^1.5.1",
     "sirv-cli": "^1.0.14",
     "svelte-chota": "^1.8.6"
