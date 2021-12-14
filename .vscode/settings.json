@@ -1,5 +1,7 @@
 {
+  "editor.bracketPairColorization.enabled": true,
   "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": false,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -7,5 +9,5 @@
   "workbench.colorTheme": "Oceanic Next (dimmed bg)",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
-  "workbench.productIconTheme": "material-product-icons",
+  "workbench.productIconTheme": "material-product-icons"
 }
