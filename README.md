@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn0.iconfinder.com/data/icons/education-flat-7/128/03_Brush-512.png" alt="logo" height="196">
+    <img src="https://cdn0.iconfinder.com/data/icons/education-flat-7/128/03_Brush-512.png" alt="logo" height="128">
 </div>
 
 # hanzi-learner
