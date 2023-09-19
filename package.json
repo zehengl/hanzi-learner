@@ -14,7 +14,7 @@
     "eslint": "^8.49.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "gh-pages": "^5.0.0",
-    "postcss": "^8.4.29",
+    "postcss": "^8.4.30",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
     "rollup": "^2.79.1",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "chota": "^0.9.2",
-    "hanzi-writer": "^3.5.0",
+    "hanzi-writer": "^3.6.0",
     "siema": "^1.5.1",
     "sirv-cli": "^2.0.2",
     "svelte-chota": "^1.8.6"
