@@ -5,23 +5,14 @@
 # hanzi-learner
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/00479b1b-7892-4250-9b23-91df71d8c763/deploy-status)](https://app.netlify.com/sites/hanzi-learner/deploys)
-[![GitHub Pages Build and Deploy](https://github.com/zehengl/hanzi-learner/actions/workflows/gh-pages-build-deploy.yml/badge.svg)](https://github.com/zehengl/hanzi-learner/actions/workflows/gh-pages-build-deploy.yml)
-[![Depfu](https://badges.depfu.com/badges/ff841f27978cf5e289f0e238b91ad847/count.svg)](https://depfu.com/github/zehengl/hanzi-learner?project_id=23910)
+[![GitHub Pages Build and Deploy](https://github.com/zehengl/hanzi-learner/actions/workflows/gh-deploy.yml/badge.svg)](https://github.com/zehengl/hanzi-learner/actions/workflows/gh-deploy.yml)
 
 A Svelte app to learn Chinese characters
 
-## Deploy
+## Getting Started
 
-### gh-pages
-
-    npm run build
-    gh-pages -d public
-
-### now
-
+    npm install
     npm run dev
-    cd public
-    now
 
 ## Credits
 
