@@ -28,7 +28,7 @@
     "chota": "^0.9.2",
     "hanzi-writer": "^3.7.2",
     "siema": "^1.5.1",
-    "sirv-cli": "^2.0.2",
+    "sirv-cli": "^3.0.0",
     "svelte-chota": "^1.8.6"
   }
 }
