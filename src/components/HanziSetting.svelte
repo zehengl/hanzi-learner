@@ -9,7 +9,7 @@
   };
 </script>
 
-<span on:click={show}>
+<span on:keypress on:click={show}>
   <SettingsIcon size="1x" />
 </span>
 
